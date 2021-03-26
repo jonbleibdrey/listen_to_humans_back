@@ -1,7 +1,7 @@
 class AudibleSerializer < ActiveModel::Serializer
   attributes :id, :title, :by, :language, :audio_file, :track
   has_many :reviews
-
+  
   include Rails.application.routes.url_helpers
 
   def track

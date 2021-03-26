@@ -4,7 +4,7 @@ class AudiblesController < ApplicationController
   # GET /audibles
   def index
     @audibles = Audible.all
-
+    
     render json: @audibles, include:[:reviews]
   end
 
